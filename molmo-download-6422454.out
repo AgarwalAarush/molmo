@@ -1,0 +1,112 @@
+=== Job started at Sun Feb 22 11:13:36 AM EST 2026 ===
+Running on node: babel-x5-32
+=== Downloading PixMo (training data) ===
+2026-02-22 11:13:51.202	babel-x5-32:0	root:66	INFO	Starting download for PixMoDocs (1/8)
+2026-02-22 11:13:51.296	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-docs/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-22 11:13:51.314	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/allenai/pixmo-docs/d887597bf4af2bc61a4210071a8cef898287e6fb/README.md "HTTP/1.1 200 OK"
+2026-02-22 11:13:51.416	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-docs/resolve/d887597bf4af2bc61a4210071a8cef898287e6fb/pixmo-docs.py "HTTP/1.1 404 Not Found"
+2026-02-22 11:13:51.495	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/allenai/pixmo-docs/allenai/pixmo-docs.py "HTTP/1.1 404 Not Found"
+2026-02-22 11:13:51.568	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-docs/revision/d887597bf4af2bc61a4210071a8cef898287e6fb "HTTP/1.1 200 OK"
+2026-02-22 11:13:51.601	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-docs/resolve/d887597bf4af2bc61a4210071a8cef898287e6fb/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-02-22 11:13:51.678	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=allenai/pixmo-docs "HTTP/1.1 200 OK"
+2026-02-22 11:13:51.719	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-docs/tree/d887597bf4af2bc61a4210071a8cef898287e6fb/charts?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-22 11:13:51.756	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-docs/tree/d887597bf4af2bc61a4210071a8cef898287e6fb?recursive=false&expand=false "HTTP/1.1 200 OK"
+2026-02-22 11:13:51.795	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-docs/resolve/d887597bf4af2bc61a4210071a8cef898287e6fb/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-02-22 11:13:51.835	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-docs/tree/d887597bf4af2bc61a4210071a8cef898287e6fb/other?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-22 11:13:52.066	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-docs/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-22 11:13:52.083	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/allenai/pixmo-docs/d887597bf4af2bc61a4210071a8cef898287e6fb/README.md "HTTP/1.1 200 OK"
+2026-02-22 11:13:52.113	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-docs/resolve/d887597bf4af2bc61a4210071a8cef898287e6fb/pixmo-docs.py "HTTP/1.1 404 Not Found"
+2026-02-22 11:13:52.129	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/allenai/pixmo-docs/allenai/pixmo-docs.py "HTTP/1.1 404 Not Found"
+2026-02-22 11:13:52.169	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-docs/resolve/d887597bf4af2bc61a4210071a8cef898287e6fb/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-02-22 11:13:52.346	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=allenai/pixmo-docs "HTTP/1.1 200 OK"
+2026-02-22 11:13:52.384	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-docs/resolve/d887597bf4af2bc61a4210071a8cef898287e6fb/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-02-22 11:13:52.384	babel-x5-32:0	huggingface_hub.utils._http:779	WARNING	Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-02-22 11:13:52.519	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-docs/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-22 11:13:52.536	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/allenai/pixmo-docs/d887597bf4af2bc61a4210071a8cef898287e6fb/README.md "HTTP/1.1 200 OK"
+2026-02-22 11:13:52.570	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-docs/resolve/d887597bf4af2bc61a4210071a8cef898287e6fb/pixmo-docs.py "HTTP/1.1 404 Not Found"
+2026-02-22 11:13:52.586	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/allenai/pixmo-docs/allenai/pixmo-docs.py "HTTP/1.1 404 Not Found"
+2026-02-22 11:13:52.626	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-docs/resolve/d887597bf4af2bc61a4210071a8cef898287e6fb/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-02-22 11:13:52.673	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=allenai/pixmo-docs "HTTP/1.1 200 OK"
+2026-02-22 11:13:52.710	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-docs/resolve/d887597bf4af2bc61a4210071a8cef898287e6fb/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-02-22 11:13:52.752	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-docs/tree/d887597bf4af2bc61a4210071a8cef898287e6fb/diagrams?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-22 11:13:52.856	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-docs/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-22 11:13:52.873	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/allenai/pixmo-docs/d887597bf4af2bc61a4210071a8cef898287e6fb/README.md "HTTP/1.1 200 OK"
+2026-02-22 11:13:52.905	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-docs/resolve/d887597bf4af2bc61a4210071a8cef898287e6fb/pixmo-docs.py "HTTP/1.1 404 Not Found"
+2026-02-22 11:13:52.921	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/allenai/pixmo-docs/allenai/pixmo-docs.py "HTTP/1.1 404 Not Found"
+2026-02-22 11:13:52.959	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-docs/resolve/d887597bf4af2bc61a4210071a8cef898287e6fb/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-02-22 11:13:53.005	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=allenai/pixmo-docs "HTTP/1.1 200 OK"
+2026-02-22 11:13:53.043	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-docs/resolve/d887597bf4af2bc61a4210071a8cef898287e6fb/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-02-22 11:13:53.081	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-docs/tree/d887597bf4af2bc61a4210071a8cef898287e6fb/tables?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-22 11:13:53.159	babel-x5-32:0	root:75	INFO	Done with PixMoDocs in 2.0 seconds
+2026-02-22 11:13:53.159	babel-x5-32:0	root:66	INFO	Starting download for PixMoCount (2/8)
+2026-02-22 11:13:53.161	babel-x5-32:0	root:75	INFO	Done with PixMoCount in 0.0 seconds
+2026-02-22 11:13:53.161	babel-x5-32:0	root:66	INFO	Starting download for PixMoPoints (3/8)
+2026-02-22 11:13:53.198	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-points/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-22 11:13:53.215	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/allenai/pixmo-points/2b5c6931e790e00ae00d4a2857e5f95d88f09a66/README.md "HTTP/1.1 200 OK"
+2026-02-22 11:13:53.305	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-points/resolve/2b5c6931e790e00ae00d4a2857e5f95d88f09a66/pixmo-points.py "HTTP/1.1 404 Not Found"
+2026-02-22 11:13:53.331	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/allenai/pixmo-points/allenai/pixmo-points.py "HTTP/1.1 404 Not Found"
+2026-02-22 11:13:53.386	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-points/revision/2b5c6931e790e00ae00d4a2857e5f95d88f09a66 "HTTP/1.1 200 OK"
+2026-02-22 11:13:53.426	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-points/resolve/2b5c6931e790e00ae00d4a2857e5f95d88f09a66/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-02-22 11:13:53.469	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=allenai/pixmo-points "HTTP/1.1 200 OK"
+2026-02-22 11:13:53.512	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-points/tree/2b5c6931e790e00ae00d4a2857e5f95d88f09a66/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-22 11:13:53.567	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-points/tree/2b5c6931e790e00ae00d4a2857e5f95d88f09a66?recursive=false&expand=false "HTTP/1.1 200 OK"
+2026-02-22 11:13:53.605	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-points/resolve/2b5c6931e790e00ae00d4a2857e5f95d88f09a66/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-02-22 11:14:40.800	babel-x5-32:0	root:136	INFO	Getting files for 228080 image URLs
+2026-02-23 05:15:15.417	babel-x5-32:0	root:175	INFO	Got images for 165103/228080 (72.39%) image URLs
+2026-02-23 05:15:15.561	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-points-eval/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-23 05:15:15.613	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/allenai/pixmo-points-eval/e237f0491ca49bf8dec04e06fc0c3807a37ef157/README.md "HTTP/1.1 200 OK"
+2026-02-23 05:15:15.681	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/allenai/pixmo-points-eval/e237f0491ca49bf8dec04e06fc0c3807a37ef157/README.md "HTTP/1.1 200 OK"
+2026-02-23 05:15:15.738	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-points-eval/resolve/e237f0491ca49bf8dec04e06fc0c3807a37ef157/pixmo-points-eval.py "HTTP/1.1 404 Not Found"
+2026-02-23 05:15:15.802	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/allenai/pixmo-points-eval/allenai/pixmo-points-eval.py "HTTP/1.1 404 Not Found"
+2026-02-23 05:15:15.923	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-points-eval/revision/e237f0491ca49bf8dec04e06fc0c3807a37ef157 "HTTP/1.1 200 OK"
+2026-02-23 05:15:15.970	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-points-eval/resolve/e237f0491ca49bf8dec04e06fc0c3807a37ef157/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-02-23 05:15:16.130	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=allenai/pixmo-points-eval "HTTP/1.1 200 OK"
+2026-02-23 05:15:16.202	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-points-eval/tree/e237f0491ca49bf8dec04e06fc0c3807a37ef157/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-23 05:15:16.241	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-points-eval/tree/e237f0491ca49bf8dec04e06fc0c3807a37ef157?recursive=false&expand=false "HTTP/1.1 200 OK"
+2026-02-23 05:15:16.277	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-points-eval/resolve/e237f0491ca49bf8dec04e06fc0c3807a37ef157/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-02-23 05:15:16.348	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-points-eval/resolve/e237f0491ca49bf8dec04e06fc0c3807a37ef157/data/test-00000-of-00001.parquet "HTTP/1.1 302 Found"
+2026-02-23 05:15:16.416	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-points-eval/xet-read-token/e237f0491ca49bf8dec04e06fc0c3807a37ef157 "HTTP/1.1 200 OK"
+2026-02-23 05:15:20.448	babel-x5-32:0	root:171	INFO	Building subset pointing
+2026-02-23 05:18:03.685	babel-x5-32:0	root:65	INFO	Preparing local dataset...
+2026-02-23 05:18:15.984	babel-x5-32:0	root:70	INFO	Done
+2026-02-23 05:18:15.984	babel-x5-32:0	root:171	INFO	Building subset counting
+2026-02-23 05:19:09.688	babel-x5-32:0	root:65	INFO	Preparing local dataset...
+2026-02-23 05:19:23.325	babel-x5-32:0	root:70	INFO	Done
+2026-02-23 05:19:23.381	babel-x5-32:0	root:75	INFO	Done with PixMoPoints in 65130.2 seconds
+2026-02-23 05:19:23.382	babel-x5-32:0	root:66	INFO	Starting download for PixMoCapQa (4/8)
+2026-02-23 05:19:23.455	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-cap-qa/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-23 05:19:23.490	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/allenai/pixmo-cap-qa/fd3ff4b2905455ab5edfd6d06039ea6027948521/README.md "HTTP/1.1 200 OK"
+2026-02-23 05:19:23.531	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/allenai/pixmo-cap-qa/fd3ff4b2905455ab5edfd6d06039ea6027948521/README.md "HTTP/1.1 200 OK"
+2026-02-23 05:19:23.608	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-cap-qa/resolve/fd3ff4b2905455ab5edfd6d06039ea6027948521/pixmo-cap-qa.py "HTTP/1.1 404 Not Found"
+2026-02-23 05:19:23.681	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/allenai/pixmo-cap-qa/allenai/pixmo-cap-qa.py "HTTP/1.1 404 Not Found"
+2026-02-23 05:19:23.736	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-cap-qa/revision/fd3ff4b2905455ab5edfd6d06039ea6027948521 "HTTP/1.1 200 OK"
+2026-02-23 05:19:23.770	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-cap-qa/resolve/fd3ff4b2905455ab5edfd6d06039ea6027948521/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-02-23 05:19:23.952	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=allenai/pixmo-cap-qa "HTTP/1.1 200 OK"
+2026-02-23 05:19:24.011	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-cap-qa/tree/fd3ff4b2905455ab5edfd6d06039ea6027948521/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-23 05:19:24.073	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-cap-qa/tree/fd3ff4b2905455ab5edfd6d06039ea6027948521?recursive=false&expand=false "HTTP/1.1 200 OK"
+2026-02-23 05:19:24.110	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-cap-qa/resolve/fd3ff4b2905455ab5edfd6d06039ea6027948521/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-02-23 05:19:24.157	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-cap-qa/resolve/fd3ff4b2905455ab5edfd6d06039ea6027948521/data/train-00000-of-00001.parquet "HTTP/1.1 302 Found"
+2026-02-23 05:19:24.186	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-cap-qa/xet-read-token/fd3ff4b2905455ab5edfd6d06039ea6027948521 "HTTP/1.1 200 OK"
+2026-02-23 05:19:31.828	babel-x5-32:0	root:136	INFO	Getting files for 187802 image URLs
+2026-02-23 10:54:08.706	babel-x5-32:0	root:175	INFO	Got images for 163127/187802 (86.86%) image URLs
+2026-02-23 10:54:24.375	babel-x5-32:0	root:65	INFO	Preparing local dataset...
+2026-02-23 10:55:06.368	babel-x5-32:0	root:70	INFO	Done
+2026-02-23 10:55:06.417	babel-x5-32:0	root:75	INFO	Done with PixMoCapQa in 20143.0 seconds
+2026-02-23 10:55:06.417	babel-x5-32:0	root:66	INFO	Starting download for PixMoCap (5/8)
+2026-02-23 10:55:06.494	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-cap/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-02-23 10:55:06.521	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/allenai/pixmo-cap/edce6390d9d5be6c8db0d863fbe62718c88988a4/README.md "HTTP/1.1 200 OK"
+2026-02-23 10:55:06.727	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/allenai/pixmo-cap/edce6390d9d5be6c8db0d863fbe62718c88988a4/README.md "HTTP/1.1 200 OK"
+2026-02-23 10:55:06.764	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-cap/resolve/edce6390d9d5be6c8db0d863fbe62718c88988a4/pixmo-cap.py "HTTP/1.1 404 Not Found"
+2026-02-23 10:55:06.830	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://s3.amazonaws.com/datasets.huggingface.co/datasets/datasets/allenai/pixmo-cap/allenai/pixmo-cap.py "HTTP/1.1 404 Not Found"
+2026-02-23 10:55:06.864	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-cap/revision/edce6390d9d5be6c8db0d863fbe62718c88988a4 "HTTP/1.1 200 OK"
+2026-02-23 10:55:06.897	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-cap/resolve/edce6390d9d5be6c8db0d863fbe62718c88988a4/.huggingface.yaml "HTTP/1.1 404 Not Found"
+2026-02-23 10:55:06.976	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://datasets-server.huggingface.co/info?dataset=allenai/pixmo-cap "HTTP/1.1 200 OK"
+2026-02-23 10:55:07.016	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-cap/tree/edce6390d9d5be6c8db0d863fbe62718c88988a4/data?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-02-23 10:55:07.052	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-cap/tree/edce6390d9d5be6c8db0d863fbe62718c88988a4?recursive=false&expand=false "HTTP/1.1 200 OK"
+2026-02-23 10:55:07.085	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-cap/resolve/edce6390d9d5be6c8db0d863fbe62718c88988a4/dataset_infos.json "HTTP/1.1 404 Not Found"
+2026-02-23 10:55:07.138	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-cap/resolve/edce6390d9d5be6c8db0d863fbe62718c88988a4/data/train-00000-of-00004.parquet "HTTP/1.1 302 Found"
+2026-02-23 10:55:07.169	babel-x5-32:0	httpx:1025	INFO	HTTP Request: GET https://huggingface.co/api/datasets/allenai/pixmo-cap/xet-read-token/edce6390d9d5be6c8db0d863fbe62718c88988a4 "HTTP/1.1 200 OK"
+2026-02-23 10:55:11.415	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-cap/resolve/edce6390d9d5be6c8db0d863fbe62718c88988a4/data/train-00001-of-00004.parquet "HTTP/1.1 302 Found"
+2026-02-23 10:55:15.474	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-cap/resolve/edce6390d9d5be6c8db0d863fbe62718c88988a4/data/train-00002-of-00004.parquet "HTTP/1.1 302 Found"
+2026-02-23 10:55:19.726	babel-x5-32:0	httpx:1025	INFO	HTTP Request: HEAD https://huggingface.co/datasets/allenai/pixmo-cap/resolve/edce6390d9d5be6c8db0d863fbe62718c88988a4/data/train-00003-of-00004.parquet "HTTP/1.1 302 Found"
+2026-02-23 10:55:36.830	babel-x5-32:0	root:136	INFO	Getting files for 716551 image URLs
