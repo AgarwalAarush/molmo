@@ -22,18 +22,20 @@ echo "Running on node: $(hostname)"
 source $(conda info --base)/etc/profile.d/conda.sh
 conda activate molmo
 
-# 2. Environment variables
-export MOLMO_DATA_DIR=/data/user_data/aarusha/molmo
-export HF_HOME=/data/user_data/aarusha/.hf_cache
+# 2. Environment variables — match download_molmo.sh paths
+export MOLMO_DATA_DIR=/data/hf_cache/molmo
+export HF_HOME=/data/user_data/${USER}/.hf_cache
+export HF_HUB_CACHE=/data/hf_cache/hub
+export HF_DATASETS_CACHE=/data/hf_cache/datasets
 export HF_DATASETS_OFFLINE=1
 
-# 3. Go to molmo repo
-cd "$(dirname "$0")"
+# 3. Go to molmo repo (SLURM_SUBMIT_DIR when sbatch; else script dir)
+cd "${SLURM_SUBMIT_DIR:-$(cd "$(dirname "$0")" && pwd)}"
 
 # 4. Train (debug = 1 GPU quick test, qwen2_7b = full 8 GPU)
 # For debug: change to --gres=gpu:1 and use debug
 torchrun --nproc-per-node=8 launch_scripts/train_captioner.py qwen2_7b \
-  --save_folder=/data/user_data/aarusha/molmo/checkpoints/captioner \
+  --save_folder=/data/user_data/${USER}/molmo/checkpoints/captioner \
   --wandb=null
 
 echo "=== Job finished at $(date) ==="
