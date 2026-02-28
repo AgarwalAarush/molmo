@@ -29,6 +29,8 @@ export HF_HUB_CACHE=/data/hf_cache/hub
 export HF_DATASETS_CACHE=/data/hf_cache/datasets
 export HF_DATASETS_OFFLINE=1
 export PYTHONPATH="$(pwd):${PYTHONPATH}"
+# Reduce GPU OOM: smaller microbatch + allocator hint for fragmentation
+export PYTORCH_ALLOC_CONF=expandable_segments:True
 
 # 3. Go to molmo repo (SLURM_SUBMIT_DIR when sbatch; else script dir)
 cd "${SLURM_SUBMIT_DIR:-$(cd "$(dirname "$0")" && pwd)}"
@@ -38,6 +40,7 @@ cd "${SLURM_SUBMIT_DIR:-$(cd "$(dirname "$0")" && pwd)}"
 torchrun --nproc-per-node=8 launch_scripts/train_captioner.py qwen2_7b \
   --save_folder=/data/user_data/${USER}/molmo/checkpoints/captioner \
   --wandb=null \
-  --save_overwrite
+  --save_overwrite \
+  --device_train_microbatch_size=2
 
 echo "=== Job finished at $(date) ==="
