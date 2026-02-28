@@ -28,6 +28,7 @@ export HF_HOME=/data/user_data/${USER}/.hf_cache
 export HF_HUB_CACHE=/data/hf_cache/hub
 export HF_DATASETS_CACHE=/data/hf_cache/datasets
 export HF_DATASETS_OFFLINE=1
+export PYTHONPATH="$(pwd):${PYTHONPATH}"
 
 # 3. Go to molmo repo (SLURM_SUBMIT_DIR when sbatch; else script dir)
 cd "${SLURM_SUBMIT_DIR:-$(cd "$(dirname "$0")" && pwd)}"
@@ -36,6 +37,7 @@ cd "${SLURM_SUBMIT_DIR:-$(cd "$(dirname "$0")" && pwd)}"
 # For debug: change to --gres=gpu:1 and use debug
 torchrun --nproc-per-node=8 launch_scripts/train_captioner.py qwen2_7b \
   --save_folder=/data/user_data/${USER}/molmo/checkpoints/captioner \
-  --wandb=null
+  --wandb=null \
+  --save_overwrite
 
 echo "=== Job finished at $(date) ==="
