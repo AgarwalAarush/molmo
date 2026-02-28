@@ -46,8 +46,8 @@ else
     mkdir -p "${DST_TORCH_DATASETS}"
 fi
 
-# 5. Go to molmo repo
-cd "$(dirname "$0")"
+# 5. Go to molmo repo (SLURM_SUBMIT_DIR when sbatch; else script dir)
+cd "${SLURM_SUBMIT_DIR:-$(cd "$(dirname "$0")" && pwd)}"
 
 # 6. Download datasets (resumes if partial data was transferred)
 echo "=== Downloading PixMo (training data) ==="
